@@ -40,7 +40,7 @@ for k from 1 to numItems
     select TextGrid 'name$'
     itemname$ = Get label of interval... 1 k
 
-    ### if this interval corresponds to a labeled item, extract its tier 2 bits
+    ### if this interval corresponds to a labeled item: extract, rescale, & save
     if length(itemname$) > 1
     
         intervalstart = Get start point... 1 k
